@@ -1,11 +1,11 @@
-> Hello Does anyone have a report that will list the top 100 circulating 
-> titles (with circ total) within last 365 days by collection or format?
-> Or, is there a way in Simply Reports to produce this report? Any help 
-> is appreciated. We are on 3.5, build 455.
+--Hello Does anyone have a report that will list the top 100 circulating 
+--titles (with circ total) within last 365 days by collection or format?
+-- Or, is there a way in Simply Reports to produce this report? Any help 
+--is appreciated. We are on 3.5, build 455.
 
-I think I have something along those lines...
+--I think I have something along those lines...
 
-This will have to be modified, since it has some things in it specific to our site (e.g., which stat codes are in each category).  But it could serve as a starting point.  Hopefully the mailing list software won't censor it too badly...
+--This will have to be modified, since it has some things in it specific to our site (e.g., which stat codes are in each category).  But it could serve as a starting point.  --Hopefully the mailing list software won't censor it too badly...
 
 DECLARE @SomeWhileAgo DATETIME;
 SET     @SomeWhileAgo = DATEADD(Year, -1, GETDATE());
