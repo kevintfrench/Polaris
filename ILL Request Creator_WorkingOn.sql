@@ -1,6 +1,4 @@
 
-
-
 --This brings up again all users who (I'm guessing) modified the ILL. 
 --Even if use the th.PolarisUserID (instead of pid.Namme), it does not work.
 SELECT ill.ILLRequestID, pid.Name, tt.TransactionTypeDescription, ill.CreationDate
@@ -12,7 +10,7 @@ ON th.PolarisUserID = pid.PolarisUserID
 JOIN Polaris.ILLRequests AS ill WITH (NOLOCK)
 ON th.OrganizationID = ill.PickupBranchID
 WHERE th.OrganizationID = 3
-AND th.TransactionTypeID = 6033
+AND th.TransactionTypeID = 6034
 AND ill.ILLRequestID =  82884
 AND th.TranClientDate BETWEEN '2022-06-28 00:00:00' and '2022-06-29 23:59:59'
 GROUP BY ill.ILLRequestID, pid.Name, tt.TransactionTypeDescription, ill.CreationDate
